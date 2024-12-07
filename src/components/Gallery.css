@@ -1,0 +1,32 @@
+/* Gallery.css */
+
+/* Gallery section styling */
+#gallery {
+    text-align: center;
+    margin-top: 40px;
+    padding: 40px;
+  }
+  
+  #gallery h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the carousel images */
+  .carousel img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Keep the image aspect ratio intact */
+    border-radius: 10px; /* Add rounded corners */
+  }
+  
+  /* Add responsive styling for small screens */
+  @media (max-width: 600px) {
+    #gallery h2 {
+      font-size: 2rem; /* Smaller header size on mobile */
+    }
+    .carousel img {
+      width: 100%; /* Make images take full width of the screen */
+    }
+  }
+  

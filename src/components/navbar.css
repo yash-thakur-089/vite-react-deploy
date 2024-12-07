@@ -1,0 +1,108 @@
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 70% transparency */
+    padding: 1rem 2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Keep the logo and buttons spaced */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    height: 70px; /* Fixed height for navbar */
+}
+
+/* Styling for navbar logo */
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px; /* Provide space between the logo and the buttons */
+}
+
+/* Styling for navbar links */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem; /* Adjusted gap */
+    margin-right: 25px; /* Shift buttons slightly left for larger screens */
+}
+
+/* Styling for individual list items */
+.navbar li {
+    display: inline-block;
+}
+
+/* Styling for links that look like buttons */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 18px; /* Adjusted padding for smaller buttons */
+    border-radius: 5px;
+    font-size: 1rem; /* Slightly smaller font */
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Hover effect for buttons */
+.navbar a:hover {
+    background-color: grey; /* Darker shade when hovered */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Active state for button (optional) */
+.navbar a.active {
+    background-color: grey; /* Active state color */
+}
+
+/* Responsive styling for tablets */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 1rem; /* Reduced padding for smaller screens */
+        height: 60px; /* Adjusted height for tablets */
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem; /* Slightly smaller logo font size */
+        margin-right: 10px;
+    }
+
+    .navbar ul {
+        gap: 0.5rem; /* Reduced gap between buttons */
+        margin-right: 0; /* Remove additional margin for smaller screens */
+    }
+
+    .navbar a {
+        padding: 8px 12px; /* Smaller padding for buttons */
+        font-size: 0.9rem; /* Reduced font size for buttons */
+    }
+}
+
+/* Responsive styling for mobile phones */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem; /* Reduced padding for smaller screens */
+        height: 60px; /* Adjusted height for mobile */
+    }
+
+    .navbar .logo {
+        font-size: 1.2rem; /* Smaller logo for mobile screens */
+        margin-right: 5px;
+    }
+
+    .navbar ul {
+        gap: 0.3rem; /* Further reduced gap between buttons */
+        margin-right: 0; /* Remove additional margin for mobile screens */
+    }
+
+    .navbar a {
+        padding: 6px 10px; /* Further reduced padding for buttons */
+        font-size: 0.8rem; /* Smaller font size for buttons */
+    }
+}

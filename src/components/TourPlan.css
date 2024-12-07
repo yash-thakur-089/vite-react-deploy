@@ -1,0 +1,149 @@
+/* Global Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h2, h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #34a853; /* Green header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  /* Tour Plan Section */
+  #tour-plan {
+    text-align: center;
+    margin-top: 40px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.2s;
+  }
+  
+  #tour-plan h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #4c4c4c;
+  }
+  
+  .tour-plan-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tour-plan-card h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .tour-plan-card ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  
+  .tour-plan-card ul li {
+    margin-bottom: 12px;
+    color: #666;
+  }
+  
+  /* Day 1 Background Image */
+  .tour-plan-card:nth-child(1) {
+    background-image: url('https://example.com/your-image.jpg'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    text-align: left;
+  }
+  
+  /* Card Hover Effects */
+  .tour-plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tour-plan-card h3:hover {
+    color: #34a853; /* Green color on hover */
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* About Manali Section */
+  #about-manali {
+    text-align: center;
+    padding: 40px;
+    background-image: url('https://example.com/another-image.jpg'); /* Replace with actual image URL */
+    background-size: cover;
+    color: white;
+    border-radius: 8px;
+    margin-top: 50px;
+  }
+  
+  #about-manali h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  #about-manali p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #tour-plan h2 {
+      font-size: 2rem;
+    }
+  
+    .tour-plan-card h3 {
+      font-size: 1.6rem;
+    }
+  
+    .tour-plan-card ul li {
+      font-size: 1rem;
+    }
+  
+    #about-manali h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+  

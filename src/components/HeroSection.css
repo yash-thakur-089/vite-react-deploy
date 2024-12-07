@@ -1,0 +1,102 @@
+/* HeroSection.css */
+
+.hero-container {
+    background-image: url('https://wallpaperaccess.com/full/3548729.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    opacity: 0.85;
+  }
+  
+  .hero-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .hero-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Darken the background for better text visibility */
+    z-index: 0;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For tablets and larger phones */
+  @media screen and (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-description {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  
+    .hero-btn {
+      padding: 10px 25px;
+      font-size: 1rem;
+    }
+  }
+  
+  /* For mobile phones */
+  @media screen and (max-width: 480px) {
+    .hero-container {
+      height: 90vh; /* Adjust the height slightly for smaller screens */
+    }
+  
+    .hero-title {
+      font-size: 1.8rem;
+    }
+  
+    .hero-description {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+  
+    .hero-btn {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  

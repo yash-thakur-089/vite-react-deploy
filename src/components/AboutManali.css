@@ -1,0 +1,147 @@
+/* About Manali Section Styling */
+.about-container {
+  padding: 4rem 2rem;
+  background-color: rgb(255,250,250);
+  text-align: center;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  animation: slideInLeft 1s ease-out;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  animation: fadeIn 2s ease-out;
+}
+
+/* Feature Cards Section */
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+  animation: slideInUp 1s ease-out;
+}
+
+.about-featureCard {
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Transparent Overlay Effect on Card */
+.about-featureCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Black with 30% transparency */
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.about-featureCard h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: rgb(255,250,250,0.9); /* White text to contrast with the background */
+  z-index: 2; /* Make sure the heading stays above the overlay */
+  position: relative;
+}
+
+.about-featureCard p {
+  font-size: 1rem;
+  color: rgb(255,250,250,0.9); /* White text for description */
+  z-index: 2; /* Make sure the text stays above the overlay */
+  position: relative;
+}
+
+/* Hover effect */
+.about-featureCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific background images for each card */
+.about-featureCard:nth-child(1) {
+  background-image: url('https://brozaadventures.com/soft/file_store/detaild_itenary/830603319CJ.jpg'); /* Replace with your image */
+}
+
+.about-featureCard:nth-child(2) {
+  background-image: url('https://www.seawatersports.com/images/activies/slide/skiing-in-manali-in-himchal-pradesh-price.jpg'); /* Replace with your image */
+}
+
+.about-featureCard:nth-child(3) {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTqwpiFt2soHEsFTQr5Lo3PI4zJ9IM6bQ0Q&s'); /* Replace with your image */
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .about-features {
+    grid-template-columns: 1fr; /* Stack the cards vertically on small screens */
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-featureCard {
+    padding: 1.5rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
